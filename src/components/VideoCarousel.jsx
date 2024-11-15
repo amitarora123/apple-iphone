@@ -172,6 +172,9 @@ export const VideoCarousel = () => {
                     ? handleProcess('video-end', i)
                     : handleProcess('video-last')
                   }
+                  className={`${
+                    list.id === 2 && 'translate-x-44'}
+                    pointer-events-none`}
                 >
                   <source src={list.video} type="video/mp4" />
                 </video>

@@ -18,12 +18,11 @@ canvas {
   touch-action: none;
 }
 
-.screen-max-width {
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  position: relative;
-  max-width: 1120px;
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
+
 
 @layer utilities {
   .flex-center {
